@@ -1,0 +1,95 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: monospace;
+  color: black;
+  white-space: pre;
+  font-size: 5pt;
+  line-height: 4pt;
+  /*height:200vh;*/
+}
+
+canvas {
+  display: block;
+}
+
+#print{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.datadither{
+	padding-right:20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.head{
+	position: absolute;
+	display: flex;
+}
+.stuff{
+		font-size: 9pt;
+  line-height: 11pt;
+	left: 50%;
+    position: absolute;
+    width: 512px;
+    transform: translate(-50%);
+}
+
+.memory{
+	margin-top: -8px;
+	font-size: 20px;
+	line-height: 21px;
+	display: none;
+  margin-bottom: -20px;
+/*  justify-content: center;
+  align-items: center;*/
+}
+.addy{
+/*	font-family: "helvetica", sans-serif;*/
+	display: flex;
+/*	font-weight: bold;*/
+	white-space: normal;
+	font-size: 9pt;
+  line-height: 11pt;
+}
+
+.para{
+	white-space: normal;
+	font-size: 9pt;
+  line-height: 11pt;
+}
+
+#datetime{
+	font-size: 20px;
+	line-height: 21px;
+	margin-bottom: 0px;
+}
+
+@media print {
+
+  .no-print, .no-print *
+    {
+        display: none !important;
+    }
+    .memory{
+    	display: flex;
+    }
+    .datadither{
+    	margin-left: 0px;
+    }
+    .stuff{
+    	width: 365px;
+    }
+    .head{
+    	position: relative;
+    }
+}
+
+#sketch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

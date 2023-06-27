@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <div class="head">
+    <img class="datadither" src="datalogo.png" alt="DATA" width="200">
+    <p class="addy"> 2300 North Miami Ave, Miami, FL 33127</p>
+  </div>
+    <script src="sketch.js"></script>
+    <div id="sketch-container"></div>
+    <div class="stuff">
+    <p class="memory">MEMORY UPLOADED</p>
+    <div id="datetime"></div>
+
+  <script>
+    function updateTime() {
+      var now = new Date();
+      var datetimeElement = document.getElementById('datetime');
+      datetimeElement.innerHTML = now.toLocaleString(); // Update the content with the current date and time
+    }
+
+    // Call updateTime() initially to display the date and time immediately
+    updateTime();
+
+    // Update the date and time every second
+    setInterval(updateTime, 1000);
+  </script>
+<p class="para"> In DATA, Tainy creates a cyborg-human hybrid named Sena 瀬奈, with the goal of making her as close to a human being as possible. He strives to achieve this by uploading human emotions and memories through music. Music, in many ways represents the meaning of life: all the emotions and memories we humans feel and create during our lifetime.
+With each uploaded song, Sena becomes more complete. The process of uploading songs as information into Sena’s computerized mind is a metaphor. Each song on the album represents a feeling or a memory that Sena experiences. Through Sena’s upload process, we witness her transformation and can reflect on what it means to be ‘human’.</p>
+<p>NEON16 ©2023</NAV></p>
+</div>
+<script>
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "2") {
+        // Perform your desired action here
+        console.log("2 key pressed");
+        window.print()
+      }
+    });
+</script>
+  </body>
+</html>
